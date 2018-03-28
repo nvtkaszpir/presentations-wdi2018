@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>WDI 2018</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background="img/wdi.2018.slide.1.black.4x3.png" data-background-size="contain" data-background-repeat="no-repeat">
+          Dlaczego nie nadajesz się na DevOpsa?
+          <br/>
+          <br/>
+          <br/>
+          <p>2018.03.28</p>
+          <p>Aktualizacja Wed 28 Mar 2018 12:10:09 PM CEST</p>
+
+        </section>
+
+        <section data-background="img/wdi.2018.slide.2.4x3.png" data-background-size="contain" data-background-repeat="no-repeat"></section>
+
+        <section>
+          <h1>O mnie</h1>
+          <p><img src="img/about.me.jpg"/></p>
+          <p>Michał Sochoń</p>
+          <p>Senior something...</p>
+        </section>
+
+
+        <section>
+          <h1>DevOps?</h1>
+          <p>To jest...
+            <span class="fragment" style="color: #00ff00">Dev!</span>
+            <span class="fragment" style="color: #0ff">Ops!</span>
+            <span class="fragment" style="color: #ff0">Sec!</span>
+            <span class="fragment" style="color: #f6f">QA!</span>
+            <span class="fragment" style="color: #369">Analytics!</span>
+            <span class="fragment">Business!</span>
+          </p>
+          <p><span class="fragment" style="color: #f90">SRE</span></p>
+          <aside class="notes">
+            - all above<br/>
+            - SRE to po prostu szeroko pojęty Engieering
+          </aside>
+        </section>
+
+
+        <section>
+          <h1>Jak rozpoznać że nie jesteś DevOpsem</h1>
+          <p>
+            <span class="fragment">...tylko może po prostu jesteś specjalistą?</span>
+          </p>
+        </section>
+
+        <section>
+          <h1>Lenistwo</h1>
+          <p>
+            <span class="fragment"><img src="img/lazy.jpg"/></span><br/>
+            <span class="fragment">Nie chcesz poznawać nowego</span>
+          </p>
+          <aside class="notes">
+            - podstawowa 'siła' napędowa świata<br/>
+            - niektórzy są po prostu wygodni<br/>
+            - nie chcesz się zmienić<br/>
+            - nie masz czasu na usprawnienie pracy<br/>
+            <br/>
+            - sprowadza się do tego, że nie chcesz zawracać sobie głowy<br/>
+            - a może nie umiesz się bawić, czyli nie zanudzić się na śmierć<br/>
+            <br/>
+            - przykład:<br/>
+              - ja sam grałem w 'gierki'<br/>
+              - jest tyle pracy ze nie ma kiedy taczki załadować<br/>
+            - wyjątek:<br/>
+              - niektórzy są niekumaci, o tym później<br/>
+              - pewne rzeczy ich nie kręcą
+          </aside>
+        </section>
+
+        <section data-background="#000000" data-background-transition="convex" >
+          <h1>Nie powtarzasz</h1>
+          <p>
+            <span class="fragment">brak zasobów</span><br/>
+            <span class="fragment">unikalność zadań</span><br/>
+            <span class="fragment">ogrom pracy dookoła</span>
+          </p>
+          <aside class="notes">
+            - często nie mamy możliwości z braku zasobów, w szczególności czasu<br/>
+            - daną rzecz zrobisz tylko raz, i nakład pracy jest nieopłacalny<br/>
+            - jedna z głównych przyczyn czemu jest 'classic IT'<br/>
+            - ilość innych bardziej ważnych zadań<br/>
+            <br/>
+            - przykład:<br/>
+              - konfiguracje pewnych usług w firmie wykonasz tylko raz<br/>
+              - pewne rzeczy są tak trudne, że zajmują dużo czasu<br/>
+            - wyjątek:<br/>
+              - niektórych rzeczy nie da się za bardzo powtarzać bo np<br/>
+                może istnieć tylko jedno wystąpienie danego zdarzenia w czasie
+          </aside>
+        </section>
+
+        <section>
+          <h1>Nie automatyzujesz</h1>
+          <p>
+            <span class="fragment">nie znasz narzędzi</span><br/>
+            <span class="fragment">nie tworzysz narzędzi</span><br/>
+            <span class="fragment"><img src="img/kill.it.with.fire.gif"/></span><br/>
+          </p>
+          <aside class="notes">
+            - bez version control system<br/>
+            - nie znasz narzędzi do automatyzacji procesów, począwszy od<br/>
+              skryptów, kończąc na takich rzeczach do CI jak jenkins/travis itd<br/>
+            - nie piszesz testów (różnych)<br/>
+            <br/>
+            - przykład:<br/>
+              - proste bashe/pythony czy inny najlepiej znany język<br/>
+              - vagrant, configuration management<br/>
+              - infra provisioning w chmurze<br/>
+            - wyjątek:<br/>
+              - nie próbuj automatyzować za pierwszym razem
+          </aside>
+        </section>
+
+        <section data-transition="slide-in fade-out" >
+          <h1>Nie eksperymentujesz</h1>
+            <span class="fragment"><img src="img/pyro.jpg"/></span><br/>
+        </section>
+
+        <section data-transition="zoom" data-background="#00FF00" >
+          <h1>Nie eksperymentujesz</h1>
+          <p>
+            <span class="fragment">strach przed zmianą</span><br/>
+            <span class="fragment">brak rozliczeń</span><br/>
+            <span class="fragment">nie robisz tego samego inaczej</span>
+          </p>
+          <aside class="notes">
+            - strach, że coś może nie pójść bardzo demotywuje<br/>
+            <br/>
+            - nie masz narzędzi do zbierania wyników, np metryk<br/>
+            - brak danych historycznych, więc jak pokażesz, że działa lepiej?<br/>
+            <br/>
+            - przykład:<br/>
+              - postaraj się pewne rzeczy zmienić z zabawę a nie rozkaz<br/>
+              - użyj narzędzia do prostego zbierania metryk<br/>
+              - potem bazuj a logach i konwertuje je na metryki<br/>
+              - niestety czasami trzeba porzucić wybrane narzędzie i zrobić coś
+                inaczej<br/>
+            - wyjątek:<br/>
+              - jeden projekt już lepiej było dociągnąć bo za dużo w nim
+                kasy utopiono<br/>
+          </aside>
+        </section>
+
+        <section data-background="img/tetris.gif" data-background-size="contain" data-background-repeat="no-repeat">
+          <h1>Nie upraszczasz</h1>
+          <p>
+            <span class="fragment">over-engineering</span><br/>
+            <span class="fragment">zbyt silne powiązanie procesów</span><br/>
+            <span class="fragment">tworzenie rozproszonych monolitów</span>
+          </p>
+          <aside class="notes">
+            - ludzie wybierają technologię aby ją poznać, a nie zastosować<br/>
+            - niby mikroserwisy ale wszystkie zależne np od jednej bazy<br/>
+            - brak definiowania punktów styku w procesach przekłada się na<br/>
+              to, że narzędzia nie są elastyczne<br/>
+            <br/>
+            - przykład:<br/>
+              - vagrant/puppet jak możesz mieć tylko ssh bo więcej nie trzeba<br/>
+              - wybieranie technologii nie pasującej do danego problemu<br/>
+              - używanie rozwiązań bo inni rozwiązują<br/>
+              - nie jesteś Google/Facebook<br/>
+            - wyjątek:<br/>
+              - trochę czasu zajmuje aby wiedzieć, że dane rozwiązanie będzie
+                się skalowało bo 'tak będzie'<br/>
+          </aside>
+        </section>
+
+        <section>
+          <video data-autoplay>
+           <source data-src="img/snow.cleaning.webm" type="video/webm" />
+           </video>
+        </section>
+
+        <section data-background="#FF0000" data-background-transition="zoom">
+          <h1>Nie kończysz</h1>
+          <p>
+            <span class="fragment">80/20</span><br/>
+            <span class="fragment">pozwalasz na scope creep</span><br/>
+            <span class="fragment">brak produktów w projekcie</span><br/>
+            <span class="fragment">robisz co innego niż było do zrobienia</span>
+          </p>
+          <aside class="notes">
+            - złe estymacje czasu/pracy, 80/20 czyli wszystko zajmuje 20x wiecej<br/>
+              czasu, minimum 80h (chyba, że ktoś lubi Pareto....)<br/>
+            <br/>
+            - pozwolenie na ciągłe dorzucanie czegoś<br/>
+            <br/>
+            - ludzie boją się oceny<br/>
+            - ludzie nie mają sensownych wyników metryk<br/>
+            <br/>
+            - w czasie robienia jednego wychodzi nam coś innego ;D<br/>
+            - część ludzi jest tak leniwa, że robienie 'wszystkiego dookoła' odbiera im<br/>
+              chęć do życia, np dokumentacja<br/>
+            - ludzie nadają się do RnD<br/>
+            <br/>
+            - przykład:<br/>
+              - fokus na tworzenie SCS<br/>
+              - zrób produkt od początku do końca, z wdrożeniem na produkcje
+                dorzuć metryki, logi, monitoring i spij spokojnie ;)
+                KPI, koszty<br/>
+              - nie wiesz tak naprawdę czego oczekują klienci<br/>
+              - ogólnie o ITIL<br/>
+            - wyjątek:<br/>
+              - RnD, spike<br/>
+          </aside>
+        </section>
+
+        <section data-background="img/deadpools.gun.jpg" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#FFFF00" >
+        </section>
+
+        <section data-background="#FFFF00" >
+          <h1>Nie dzielisz się wiedzą</h1>
+          <p>
+            <span class="fragment">nie szkolisz</span><br/>
+            <span class="fragment">nie rozmawiasz z zespołem</span><br/>
+            <span class="fragment">nie ustanawiacie standardu</span><br/>
+            <span class="fragment">nie inspirujesz innych swoją pracą</span>
+          </p>
+          <aside class="notes">
+            - ludzie nie lubią gadać i tyle, ale browar pomaga ;)<br/>
+            - brak chęci/czasu usystematyzowania wiedzy<br/>
+            - nie wiedzą JAK przekazać wiedzę<br/>
+            - niestety czasem specjalnie blokują wiedzę aby nikt ich nie wykopał<br/>
+            <br/>
+            - przykład:<br/>
+              - 'daj ja to zrobię'<br/>
+              - samo dokumentujący się kod nie zawsze działa<br/>
+              - dobry przykład to i mroczne opowieści przy piwie<br/>
+            - wyjątek:<br/>
+              - jeśli know-how daje ci przewagę w biznesie ;)<br/>
+          </aside>
+        </section>
+
+        <section  data-background-color="#0ff" data-background-transition="concave" >
+          <h1>Nie patrzysz z dystansu</h1>
+          <p>
+            <span class="fragment">w sumie to takie PDCA</span><br/>
+            <span class="fragment">nie usprawniasz procesu zmian</span><br/>
+            <span class="fragment">nie przyjmujesz krytyki</span>
+          </p>
+          <aside class="notes">
+            - sprawdzaj czego się nauczyłeś w tym tygodniu, jaki jest postęp
+              w przeciągu okresów czasu, np miesiąc, rok itd.<br/>
+            - właśnie po to gada się z ludźmi<br/>
+            - dlatego idzie się do szkoły, szkolenia itd<br/>
+            - ale jeśli już dotarłeś do tego etapu to raczej wiesz co mniej więcej będziesz robił...<br/>
+            - masz prawo się mylić :)<br/>
+            - poznaj swoje wady/ograniczenia<br/>
+            <br/>
+            - przykład:<br/>
+              - ja się nie nadaje do pewnych rzeczy ;)<br/>
+            - wyjątek:<br/>
+              - nie masz doświadczenia wiec nie masz punktu odniesienia<br/>
+          </aside>
+        </section>
+
+
+        <section>
+          <h1>Według mnie</h1>
+          <p class="fragment current-visible">
+                Poznawanie nowego<br/>
+                Eksperymenty<br/>
+                Specjalizacja<br/>
+                Komunikacja<br/>
+                Zespół<br/>
+          </p>
+
+          <aside class="notes">
+            - poznawanie nowego, aby się nie zanudzić, innowacja jest podstawa firmy<br/>
+            - poznawanie to także otwartość na zmiany, czyli kultura<br/>
+            <br/>
+            - innowacja oznacza eksperymenty, możliwość popełnienia błędów, podsumowanie wyników<br/>
+
+            - sam wszystkiego nie wiesz a tym bardziej nie zrobisz<br/>
+            <br/>
+            - komunikacja w dwie strony, ty słuchasz, ty wysyłasz do innych<br/>
+            - komunikacja to tez rozliczanie i logi ;)<br/>
+            <br/>
+            - zespól to zaufanie i pomaganie innym<br/>
+          </aside>
+        </section>
+
+        <section data-background="img/laptop.jpeg" >
+        </section>
+
+        <section data-background="img/pytania.jpeg" >
+        </section>
+
+        <section >
+          <h1>Dziękuję za uwagę!</h1>
+          <p>kaszpir @ gmail</p>
+          <p>_KaszpiR_ @ quakenet / freenode / oftc</p>
+          <p>nvtkaszpir @ github</p>
+          <p><a href="https://sayat.me/kaszpir">sayat.me/kaszpir</a></p>
+
+          <aside class="notes">
+
+          </aside>
+        </section>
+
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+      Reveal.configure({ slideNumber: 'c/t' });
+
+    </script>
+  </body>
+</html>
